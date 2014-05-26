@@ -1,0 +1,692 @@
+[kernel] preprocessing with "gcc -C -E -I.  main.c"
+[value] Analyzing a complete application starting at main
+[value] Computing initial state
+[value] Initial state computed
+[value] Values of globals at initialization
+        bgdot ∈ [--..--]
+        in_menu ∈ [--..--]
+        inputdevs_player[0..3] ∈ [--..--]
+        game ∈ {{ &NULL ; &S_game }}
+        S_game[0]{.mode; .state; } ∈ [--..--]
+              [0].[bits 16 to 31] ∈ UNINITIALIZED
+              [0].next ∈ {{ &NULL ; &S_next_0_S_game }}
+              [0].player[0]{.startlevel; .height; .lineslimit; .rotationsys; .piece{.blocks; .x; .y; .color; }; } ∈
+              [--..--]
+              [0].player[0]{.piece.[bits 40 to 47]; .[bits 80 to 95]; } ∈
+              UNINITIALIZED
+              [0].player[0]{.board[0..19]; .score; .level; } ∈ [--..--]
+              [0].player[0].[bits 776 to 783] ∈ UNINITIALIZED
+              [0].player[0]{.falltime; .lines; .mvleft_tm; .mvright_tm; } ∈
+              [--..--]
+              [0].player[0].[bits 848 to 863] ∈ UNINITIALIZED
+              [1]{.mode; .state; } ∈ [--..--]
+              [1].[bits 16 to 31] ∈ UNINITIALIZED
+              [1].next ∈ {{ &NULL ; &S_next_1_S_game }}
+              [1].player[0]{.startlevel; .height; .lineslimit; .rotationsys; .piece{.blocks; .x; .y; .color; }; } ∈
+              [--..--]
+              [1].player[0]{.piece.[bits 40 to 47]; .[bits 80 to 95]; } ∈
+              UNINITIALIZED
+              [1].player[0]{.board[0..19]; .score; .level; } ∈ [--..--]
+              [1].player[0].[bits 776 to 783] ∈ UNINITIALIZED
+              [1].player[0]{.falltime; .lines; .mvleft_tm; .mvright_tm; } ∈
+              [--..--]
+              [1].player[0].[bits 848 to 863] ∈ UNINITIALIZED
+        S_next_0_S_game[0]{.blocks; .x; .y; .color; } ∈ [--..--]
+                       [0].[bits 40 to 47] ∈ UNINITIALIZED
+                       [1]{.blocks; .x; .y; .color; } ∈ [--..--]
+                       [1].[bits 40 to 47] ∈ UNINITIALIZED
+        S_next_1_S_game[0]{.blocks; .x; .y; .color; } ∈ [--..--]
+                       [0].[bits 40 to 47] ∈ UNINITIALIZED
+                       [1]{.blocks; .x; .y; .color; } ∈ [--..--]
+                       [1].[bits 40 to 47] ∈ UNINITIALIZED
+main.c:157:[kernel] warning: out of bounds read. assert \valid(argv+0);
+[value] computing for function setcfgfilename <- main.
+        Called from main.c:157.
+[kernel] warning: No code for function setcfgfilename, default assigns generated
+[value] Done for function setcfgfilename
+[value] computing for function readoptions <- main.
+        Called from main.c:158.
+[kernel] warning: No code for function readoptions, default assigns generated
+[value] Done for function readoptions
+[value] computing for function timer_init <- main.
+        Called from main.c:159.
+[kernel] warning: No code for function timer_init, default assigns generated
+[value] Done for function timer_init
+[value] computing for function atexit <- main.
+        Called from main.c:160.
+[kernel] warning: No code for function atexit, default assigns generated
+[value] Done for function atexit
+[value] computing for function signal <- main.
+        Called from main.c:162.
+[kernel] warning: No code for function signal, default assigns generated
+[value] Done for function signal
+[value] computing for function gettermsize <- main.
+        Called from main.c:164.
+[kernel] warning: No code for function gettermsize, default assigns generated
+[value] Done for function gettermsize
+[value] computing for function getlang <- main.
+        Called from main.c:165.
+[kernel] warning: No code for function getlang, default assigns generated
+[value] Done for function getlang
+[value] computing for function proc_args <- main.
+        Called from main.c:170.
+[kernel] warning: No code for function proc_args, default assigns generated
+[value] Done for function proc_args
+[value] computing for function gettermoptions <- main.
+        Called from main.c:172.
+[kernel] warning: No code for function gettermoptions, default assigns generated
+[value] Done for function gettermoptions
+[value] computing for function startup <- main.
+        Called from main.c:176.
+[value] computing for function textgfx_init <- startup <- main.
+        Called from main.c:82.
+[kernel] warning: No code for function textgfx_init, default assigns generated
+[value] Done for function textgfx_init
+[value] computing for function atexit <- startup <- main.
+        Called from main.c:83.
+[value] Done for function atexit
+[value] computing for function init_inputdevs <- startup <- main.
+        Called from main.c:84.
+[kernel] warning: No code for function init_inputdevs, default assigns generated
+[value] Done for function init_inputdevs
+[value] computing for function default_bgdot <- startup <- main.
+        Called from main.c:89.
+[kernel] warning: No code for function default_bgdot, default assigns generated
+[value] Done for function default_bgdot
+[value] computing for function textgfx_entermenu <- startup <- main.
+        Called from main.c:91.
+[kernel] warning: No code for function textgfx_entermenu, default assigns generated
+[value] Done for function textgfx_entermenu
+[value] computing for function setupgame <- startup <- main.
+        Called from main.c:93.
+[value] computing for function initgame <- setupgame <- startup <- main.
+        Called from main.c:50.
+[kernel] warning: No code for function initgame, default assigns generated
+[value] Done for function initgame
+main.c:54:[value] entering loop for the first time
+[value] computing for function writeconfig <- setupgame <- startup <- main.
+        Called from main.c:59.
+[kernel] warning: No code for function writeconfig, default assigns generated
+[value] Done for function writeconfig
+[value] computing for function gamemenu <- setupgame <- startup <- main.
+        Called from main.c:54.
+[kernel] warning: No code for function gamemenu, default assigns generated
+[value] Done for function gamemenu
+main.c:60:[value] entering loop for the first time
+[value] computing for function textgfx_entergame <- setupgame <- startup <- main.
+        Called from main.c:60.
+[kernel] warning: No code for function textgfx_entergame, default assigns generated
+[value] Done for function textgfx_entergame
+[value] computing for function startgame <- setupgame <- startup <- main.
+        Called from main.c:61.
+[kernel] warning: No code for function startgame, default assigns generated
+[value] Done for function startgame
+[value] computing for function writeconfig <- setupgame <- startup <- main.
+        Called from main.c:59.
+[value] Done for function writeconfig
+[value] computing for function textgfx_entergame <- setupgame <- startup <- main.
+        Called from main.c:60.
+[value] Done for function textgfx_entergame
+[value] computing for function clearwin <- setupgame <- startup <- main.
+        Called from main.c:63.
+[kernel] warning: No code for function clearwin, default assigns generated
+[value] Done for function clearwin
+[value] computing for function startgame <- setupgame <- startup <- main.
+        Called from main.c:61.
+[value] Done for function startgame
+[value] computing for function textgfx_entermenu <- setupgame <- startup <- main.
+        Called from main.c:65.
+[value] Done for function textgfx_entermenu
+[value] computing for function readoptions <- setupgame <- startup <- main.
+        Called from main.c:66.
+[value] Done for function readoptions
+[value] computing for function clearwin <- setupgame <- startup <- main.
+        Called from main.c:63.
+[value] Done for function clearwin
+[value] computing for function textgfx_entermenu <- setupgame <- startup <- main.
+        Called from main.c:65.
+[value] Done for function textgfx_entermenu
+[value] computing for function readoptions <- setupgame <- startup <- main.
+        Called from main.c:66.
+[value] Done for function readoptions
+[value] Recording results for setupgame
+[value] Done for function setupgame
+[value] computing for function textgfx_end <- startup <- main.
+        Called from main.c:130.
+[kernel] warning: No code for function textgfx_end, default assigns generated
+[value] Done for function textgfx_end
+[value] Recording results for startup
+[value] Done for function startup
+[value] computing for function writeconfig_message <- main.
+        Called from main.c:179.
+[kernel] warning: No code for function writeconfig_message, default assigns generated
+[value] Done for function writeconfig_message
+[value] Recording results for main
+[value] done for function main
+[pdg] computing for function atexit
+[from] Computing for function atexit
+[from] Done for function atexit
+[pdg] done for function atexit
+[pdg] RESULT for atexit:
+      [Elem] 1 : InCtrl
+      [Elem] 2 : VarDecl : __func
+        -[a--]-> 3
+      [Elem] 3 : In1
+        -[a--]-> 2
+      [Elem] 4 : OutRet
+[pdg] computing for function readoptions
+[from] Computing for function readoptions
+[from] Done for function readoptions
+[pdg] done for function readoptions
+[pdg] RESULT for readoptions:
+      [Elem] 5 : InCtrl
+[pdg] computing for function proc_args
+[from] Computing for function proc_args
+[from] Done for function proc_args
+[pdg] done for function proc_args
+[pdg] RESULT for proc_args:
+      [Elem] 6 : InCtrl
+      [Elem] 7 : VarDecl : args
+        -[a--]-> 8
+      [Elem] 8 : In1
+        -[a--]-> 7
+      [Elem] 9 : VarDecl : n
+        -[a--]-> 10
+      [Elem] 10 : In2
+        -[a--]-> 9
+[pdg] computing for function default_bgdot
+[from] Computing for function default_bgdot
+[from] Done for function default_bgdot
+[pdg] done for function default_bgdot
+[pdg] RESULT for default_bgdot:
+      [Elem] 11 : InCtrl
+      [Elem] 12 : OutRet
+[pdg] computing for function initgame
+[from] Computing for function initgame
+[from] Done for function initgame
+[pdg] done for function initgame
+[pdg] RESULT for initgame:
+      [Elem] 13 : InCtrl
+[pdg] computing for function gettermsize
+[from] Computing for function gettermsize
+[from] Done for function gettermsize
+[pdg] done for function gettermsize
+[pdg] RESULT for gettermsize:
+      [Elem] 14 : InCtrl
+[pdg] computing for function textgfx_entermenu
+[from] Computing for function textgfx_entermenu
+[from] Done for function textgfx_entermenu
+[pdg] done for function textgfx_entermenu
+[pdg] RESULT for textgfx_entermenu:
+      [Elem] 15 : InCtrl
+[pdg] computing for function gettermoptions
+[from] Computing for function gettermoptions
+[from] Done for function gettermoptions
+[pdg] done for function gettermoptions
+[pdg] RESULT for gettermoptions:
+      [Elem] 16 : InCtrl
+[pdg] computing for function signal
+[from] Computing for function signal
+[from] Done for function signal
+[pdg] done for function signal
+[pdg] RESULT for signal:
+      [Elem] 17 : InCtrl
+      [Elem] 18 : VarDecl : __sig
+        -[a--]-> 19
+      [Elem] 19 : In1
+        -[a--]-> 18
+      [Elem] 20 : VarDecl : __handler
+        -[a--]-> 21
+      [Elem] 21 : In2
+        -[a--]-> 20
+      [Elem] 22 : OutRet
+        -[--d]-> 19
+[pdg] computing for function init_inputdevs
+[from] Computing for function init_inputdevs
+[from] Done for function init_inputdevs
+[pdg] done for function init_inputdevs
+[pdg] RESULT for init_inputdevs:
+      [Elem] 23 : InCtrl
+[pdg] computing for function clearwin
+[from] Computing for function clearwin
+[from] Done for function clearwin
+[pdg] done for function clearwin
+[pdg] RESULT for clearwin:
+      [Elem] 24 : InCtrl
+      [Elem] 25 : VarDecl : win
+        -[a--]-> 26
+      [Elem] 26 : In1
+        -[a--]-> 25
+[pdg] computing for function timer_init
+[from] Computing for function timer_init
+[from] Done for function timer_init
+[pdg] done for function timer_init
+[pdg] RESULT for timer_init:
+      [Elem] 27 : InCtrl
+[pdg] computing for function writeconfig_message
+[from] Computing for function writeconfig_message
+[from] Done for function writeconfig_message
+[pdg] done for function writeconfig_message
+[pdg] RESULT for writeconfig_message:
+      [Elem] 28 : InCtrl
+[pdg] computing for function writeconfig
+[from] Computing for function writeconfig
+[from] Done for function writeconfig
+[pdg] done for function writeconfig
+[pdg] RESULT for writeconfig:
+      [Elem] 29 : InCtrl
+      [Elem] 30 : OutRet
+[pdg] computing for function startgame
+[from] Computing for function startgame
+[from] Done for function startgame
+[pdg] done for function startgame
+[pdg] RESULT for startgame:
+      [Elem] 31 : InCtrl
+      [Elem] 32 : OutRet
+[pdg] computing for function getlang
+[from] Computing for function getlang
+[from] Done for function getlang
+[pdg] done for function getlang
+[pdg] RESULT for getlang:
+      [Elem] 33 : InCtrl
+[pdg] computing for function gamemenu
+[from] Computing for function gamemenu
+[from] Done for function gamemenu
+[pdg] done for function gamemenu
+[pdg] RESULT for gamemenu:
+      [Elem] 34 : InCtrl
+      [Elem] 35 : OutRet
+[pdg] computing for function textgfx_entergame
+[from] Computing for function textgfx_entergame
+[from] Done for function textgfx_entergame
+[pdg] done for function textgfx_entergame
+[pdg] RESULT for textgfx_entergame:
+      [Elem] 36 : InCtrl
+[pdg] computing for function textgfx_end
+[from] Computing for function textgfx_end
+[from] Done for function textgfx_end
+[pdg] done for function textgfx_end
+[pdg] RESULT for textgfx_end:
+      [Elem] 37 : InCtrl
+[pdg] computing for function textgfx_init
+[from] Computing for function textgfx_init
+[from] Done for function textgfx_init
+[pdg] done for function textgfx_init
+[pdg] RESULT for textgfx_init:
+      [Elem] 38 : InCtrl
+[pdg] computing for function setcfgfilename
+[from] Computing for function setcfgfilename
+[from] Done for function setcfgfilename
+[pdg] done for function setcfgfilename
+[pdg] RESULT for setcfgfilename:
+      [Elem] 39 : InCtrl
+      [Elem] 40 : VarDecl : argv0
+        -[a--]-> 41
+      [Elem] 41 : In1
+        -[a--]-> 40
+[pdg] computing for function setupgame
+[pdg] done for function setupgame
+[pdg] RESULT for setupgame:
+      [Elem] 42 : InCtrl
+      [Elem] 43 : VarDecl : i
+        -[a--]-> 44
+      [Elem] 44 : In1
+        -[a--]-> 43
+      [Elem] 45 : VarDecl : gm1p
+      [Elem] 46 : VarDecl : tmp
+      [Elem] 47 : VarDecl : tmp_0
+      [Elem] 48 : game = (struct game *)(& gm1p);
+        -[-c-]-> 42
+        -[--d]-> 45
+      [Elem] 49 : Call2-InCtrl : initgame();
+        -[-c-]-> 42
+      [Elem] 50 : ! in_menu
+        -[-c-]-> 42
+        -[--d]-> 75
+      [Elem] 51 : goto skipmenu;
+        -[-c-]-> 42
+        -[-c-]-> 50
+        -[-c-]-> 52
+      [Elem] 52 : skipmenu: 
+        -[-c-]-> 42
+        -[-c-]-> 50
+        -[-c-]-> 51
+        -[-c-]-> 53
+        -[-c-]-> 58
+        -[-c-]-> 60
+        -[-c-]-> 71
+      [Elem] 53 : while(1)
+        -[-c-]-> 42
+        -[-c-]-> 50
+        -[-c-]-> 51
+        -[-c-]-> 53
+        -[-c-]-> 58
+        -[-c-]-> 71
+      [Elem] 54 : Call13-InCtrl : writeconfig();
+        -[-c-]-> 42
+        -[-c-]-> 50
+        -[-c-]-> 51
+        -[-c-]-> 53
+        -[-c-]-> 58
+        -[-c-]-> 60
+        -[-c-]-> 71
+      [Elem] 55 : Call7-InCtrl : tmp_0 = gamemenu();
+        -[-c-]-> 42
+        -[-c-]-> 50
+        -[-c-]-> 51
+        -[-c-]-> 53
+        -[-c-]-> 58
+        -[-c-]-> 71
+      [Elem] 56 : Call7-OutRet : tmp_0 = gamemenu();
+        -[-c-]-> 42
+        -[a--]-> 47
+        -[-c-]-> 50
+        -[-c-]-> 51
+        -[-c-]-> 53
+        -[-c-]-> 55
+        -[-c-]-> 58
+        -[-c-]-> 71
+      [Elem] 57 : while(1)
+        -[-c-]-> 42
+        -[-c-]-> 50
+        -[-c-]-> 51
+        -[-c-]-> 53
+        -[-c-]-> 57
+        -[-c-]-> 58
+        -[-c-]-> 60
+        -[-c-]-> 64
+        -[-c-]-> 65
+        -[-c-]-> 71
+      [Elem] 58 : tmp_0
+        -[-c-]-> 42
+        -[--d]-> 47
+        -[-c-]-> 50
+        -[-c-]-> 51
+        -[-c-]-> 53
+        -[--d]-> 56
+        -[-c-]-> 58
+        -[-c-]-> 71
+      [Elem] 59 : Call15-InCtrl : textgfx_entergame();
+        -[-c-]-> 42
+        -[-c-]-> 50
+        -[-c-]-> 51
+        -[-c-]-> 53
+        -[-c-]-> 57
+        -[-c-]-> 58
+        -[-c-]-> 60
+        -[-c-]-> 64
+        -[-c-]-> 65
+        -[-c-]-> 71
+      [Elem] 60 : block
+        -[-c-]-> 42
+        -[-c-]-> 50
+        -[-c-]-> 51
+        -[-c-]-> 53
+        -[-c-]-> 58
+        -[-c-]-> 71
+      [Elem] 61 : Call16-InCtrl : tmp = startgame();
+        -[-c-]-> 42
+        -[-c-]-> 50
+        -[-c-]-> 51
+        -[-c-]-> 53
+        -[-c-]-> 57
+        -[-c-]-> 58
+        -[-c-]-> 60
+        -[-c-]-> 64
+        -[-c-]-> 65
+        -[-c-]-> 71
+      [Elem] 62 : Call16-OutRet : tmp = startgame();
+        -[-c-]-> 42
+        -[a--]-> 46
+        -[-c-]-> 50
+        -[-c-]-> 51
+        -[-c-]-> 53
+        -[-c-]-> 57
+        -[-c-]-> 58
+        -[-c-]-> 60
+        -[-c-]-> 61
+        -[-c-]-> 64
+        -[-c-]-> 65
+        -[-c-]-> 71
+      [Elem] 63 : in_menu = 0;
+        -[-c-]-> 42
+        -[-c-]-> 50
+        -[-c-]-> 51
+        -[-c-]-> 53
+        -[-c-]-> 58
+        -[-c-]-> 60
+        -[-c-]-> 71
+      [Elem] 64 : tmp
+        -[-c-]-> 42
+        -[--d]-> 46
+        -[-c-]-> 50
+        -[-c-]-> 51
+        -[-c-]-> 53
+        -[-c-]-> 57
+        -[-c-]-> 58
+        -[-c-]-> 60
+        -[--d]-> 62
+        -[-c-]-> 64
+        -[-c-]-> 65
+        -[-c-]-> 71
+      [Elem] 65 : break;
+        -[-c-]-> 42
+        -[-c-]-> 50
+        -[-c-]-> 51
+        -[-c-]-> 53
+        -[-c-]-> 57
+        -[-c-]-> 58
+        -[-c-]-> 60
+        -[-c-]-> 64
+        -[-c-]-> 65
+        -[-c-]-> 71
+      [Elem] 66 : Call19-InCtrl : clearwin(0);
+        -[-c-]-> 42
+        -[-c-]-> 50
+        -[-c-]-> 51
+        -[-c-]-> 53
+        -[-c-]-> 58
+        -[-c-]-> 60
+        -[-c-]-> 71
+      [Elem] 67 : Call19-In1 : clearwin(0);
+        -[-c-]-> 42
+        -[-c-]-> 50
+        -[-c-]-> 51
+        -[-c-]-> 53
+        -[-c-]-> 58
+        -[-c-]-> 60
+        -[-c-]-> 66
+        -[-c-]-> 71
+      [Elem] 68 : in_menu = 1;
+        -[-c-]-> 42
+        -[-c-]-> 50
+        -[-c-]-> 51
+        -[-c-]-> 53
+        -[-c-]-> 58
+        -[-c-]-> 60
+        -[-c-]-> 71
+      [Elem] 69 : Call21-InCtrl : textgfx_entermenu();
+        -[-c-]-> 42
+        -[-c-]-> 50
+        -[-c-]-> 51
+        -[-c-]-> 53
+        -[-c-]-> 58
+        -[-c-]-> 60
+        -[-c-]-> 71
+      [Elem] 70 : Call22-InCtrl : readoptions();
+        -[-c-]-> 42
+        -[-c-]-> 50
+        -[-c-]-> 51
+        -[-c-]-> 53
+        -[-c-]-> 58
+        -[-c-]-> 60
+        -[-c-]-> 71
+      [Elem] 71 : break;
+        -[-c-]-> 42
+        -[-c-]-> 50
+        -[-c-]-> 51
+        -[-c-]-> 53
+        -[-c-]-> 58
+        -[-c-]-> 71
+      [Elem] 72 : inputdevs_player[0] = (char)0;
+        -[-c-]-> 42
+      [Elem] 73 : game = (struct game *)((void *)0);
+        -[-c-]-> 42
+      [Elem] 74 : return;
+        -[-c-]-> 42
+      [Elem] 75 : In(in_menu)
+[pdg] computing for function startup
+[from] Computing for function setupgame
+[from] Done for function setupgame
+[pdg] done for function startup
+[pdg] RESULT for startup:
+      [Elem] 76 : InCtrl
+      [Elem] 77 : VarDecl : i
+        -[a--]-> 78
+      [Elem] 78 : In1
+        -[a--]-> 77
+      [Elem] 79 : Call27-InCtrl : textgfx_init();
+        -[-c-]-> 76
+      [Elem] 80 : Call28-InCtrl : atexit(& textgfx_end);
+        -[-c-]-> 76
+      [Elem] 81 : Call28-In1 : atexit(& textgfx_end);
+        -[-c-]-> 76
+        -[-c-]-> 80
+      [Elem] 82 : Call29-InCtrl : init_inputdevs();
+        -[-c-]-> 76
+      [Elem] 83 : ! bgdot
+        -[-c-]-> 76
+        -[--d]-> 96
+      [Elem] 84 : Call31-InCtrl : bgdot = (short)default_bgdot();
+        -[-c-]-> 76
+        -[-c-]-> 83
+      [Elem] 85 : Call31-OutRet : bgdot = (short)default_bgdot();
+        -[-c-]-> 76
+        -[-c-]-> 83
+        -[-c-]-> 84
+      [Elem] 86 : in_menu
+        -[-c-]-> 76
+        -[--d]-> 95
+      [Elem] 87 : Call35-InCtrl : textgfx_entermenu();
+        -[-c-]-> 76
+        -[-c-]-> 86
+      [Elem] 88 : Call37-InCtrl : setupgame(1);
+        -[-c-]-> 76
+      [Elem] 89 : Call37-In1 : setupgame(1);
+        -[-c-]-> 76
+        -[-c-]-> 88
+      [Elem] 90 : Call37-Out(in_menu) : setupgame(1);
+        -[-c-]-> 76
+        -[-c-]-> 88
+        -[--d]-> 95
+      [Elem] 91 : Call37-Out(inputdevs_player[0]) : setupgame(1);
+        -[-c-]-> 76
+        -[-c-]-> 88
+      [Elem] 92 : Call37-Out(game) : setupgame(1);
+        -[-c-]-> 76
+        -[-c-]-> 88
+      [Elem] 93 : Call38-InCtrl : textgfx_end();
+        -[-c-]-> 76
+      [Elem] 94 : return;
+        -[-c-]-> 76
+      [Elem] 95 : In(in_menu)
+      [Elem] 96 : In(bgdot)
+[pdg] computing for function main
+[from] Computing for function startup
+[from] Done for function startup
+[pdg] done for function main
+[pdg] RESULT for main:
+      [Elem] 97 : InCtrl
+      [Elem] 98 : VarDecl : argc
+        -[a--]-> 99
+      [Elem] 99 : In1
+        -[a--]-> 98
+      [Elem] 100 : VarDecl : argv
+        -[a--]-> 101
+      [Elem] 101 : In2
+        -[a--]-> 100
+      [Elem] 102 : VarDecl : __retres
+      [Elem] 103 : Call48-InCtrl : setcfgfilename((char const *)*(argv + 0));
+        -[-c-]-> 97
+      [Elem] 104 : Call48-In1 : setcfgfilename((char const *)*(argv + 0));
+        -[-c-]-> 97
+        -[--d]-> 100
+        -[--d]-> 101
+        -[-c-]-> 103
+        -[--d]-> 131
+      [Elem] 105 : Call49-InCtrl : readoptions();
+        -[-c-]-> 97
+      [Elem] 106 : Call50-InCtrl : timer_init();
+        -[-c-]-> 97
+      [Elem] 107 : Call51-InCtrl : atexit(& cleanup);
+        -[-c-]-> 97
+      [Elem] 108 : Call51-In1 : atexit(& cleanup);
+        -[-c-]-> 97
+        -[-c-]-> 107
+      [Elem] 109 : Call52-InCtrl : signal(2,& finish);
+        -[-c-]-> 97
+      [Elem] 110 : Call52-In1 : signal(2,& finish);
+        -[-c-]-> 97
+        -[-c-]-> 109
+      [Elem] 111 : Call52-In2 : signal(2,& finish);
+        -[-c-]-> 97
+        -[-c-]-> 109
+      [Elem] 112 : Call53-InCtrl : gettermsize();
+        -[-c-]-> 97
+      [Elem] 113 : Call54-InCtrl : getlang();
+        -[-c-]-> 97
+      [Elem] 114 : argc > 1
+        -[-c-]-> 97
+        -[--d]-> 98
+        -[--d]-> 99
+      [Elem] 115 : Call57-InCtrl : proc_args(argv + 1,argc - 1);
+        -[-c-]-> 97
+        -[-c-]-> 114
+      [Elem] 116 : Call57-In1 : proc_args(argv + 1,argc - 1);
+        -[-c-]-> 97
+        -[--d]-> 100
+        -[--d]-> 101
+        -[-c-]-> 114
+        -[-c-]-> 115
+      [Elem] 117 : Call57-In2 : proc_args(argv + 1,argc - 1);
+        -[-c-]-> 97
+        -[--d]-> 98
+        -[--d]-> 99
+        -[-c-]-> 114
+        -[-c-]-> 115
+      [Elem] 118 : Call59-InCtrl : gettermoptions();
+        -[-c-]-> 97
+      [Elem] 119 : Call60-InCtrl : startup(0);
+        -[-c-]-> 97
+      [Elem] 120 : Call60-In1 : startup(0);
+        -[-c-]-> 97
+        -[-c-]-> 119
+      [Elem] 121 : Call60-Out(bgdot) : startup(0);
+        -[-c-]-> 97
+        -[-c-]-> 119
+        -[--d]-> 130
+      [Elem] 122 : Call60-Out(in_menu) : startup(0);
+        -[-c-]-> 97
+        -[-c-]-> 119
+        -[--d]-> 129
+      [Elem] 123 : Call60-Out(inputdevs_player[0]) : startup(0);
+        -[-c-]-> 97
+        -[-c-]-> 119
+      [Elem] 124 : Call60-Out(game) : startup(0);
+        -[-c-]-> 97
+        -[-c-]-> 119
+      [Elem] 125 : Call61-InCtrl : writeconfig_message();
+        -[-c-]-> 97
+      [Elem] 126 : __retres = 0;
+        -[-c-]-> 97
+        -[a--]-> 102
+      [Elem] 127 : return (__retres);
+        -[-c-]-> 97
+        -[--d]-> 102
+        -[--d]-> 126
+      [Elem] 128 : OutRet
+        -[--d]-> 127
+      [Elem] 129 : In(in_menu)
+      [Elem] 130 : In(bgdot)
+      [Elem] 131 : In(S_argv[0])
+[pdg] ====== PDG GRAPH COMPUTED ======
